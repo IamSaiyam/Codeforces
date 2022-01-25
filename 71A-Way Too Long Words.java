@@ -9,11 +9,8 @@ public class WayTooLongWords {
         sc.nextLine();
         while((t--)>0){
             String s = sc.nextLine();
-            if(s.length()>10) {
-                String sub = s.substring(1, s.length() - 1);
-                s = "" + s.charAt(0) + sub.length() + s.charAt(s.length() - 1);
-            }
-            System.out.println(s);
+            if(s.length()>10) System.out.println("" + s.charAt(0) + (s.length()-2) + s.charAt(s.length()-1));
+            else System.out.println(s);
         }
     }
 }
