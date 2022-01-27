@@ -1,4 +1,4 @@
-//144187914	Jan/27/2022 20:25UTC+5.5	sym	266A - Stones on the Table	Java 8	Accepted	248 ms	0 KB
+//144193654	Jan/27/2022 20:31UTC+5.5	sym	266A - Stones on the Table	Java 8	Accepted	248 ms	0 KB
 import java.util.Scanner;
 
 public class StonesOnTheTable {
@@ -7,11 +7,9 @@ public class StonesOnTheTable {
         int n = sc.nextInt();
         sc.nextLine();
         String s = sc.nextLine();
-        char curr = s.charAt(0);
-        int count=0;
-        for(int i=1; i<n; i++){
-            if(s.charAt(i)==curr) count++;
-            else curr = s.charAt(i);
+        int count = 0;
+        for(int i=0; i<n-1; i++){
+            if(s.charAt(i)==s.charAt(i+1)) count++;
         }
         System.out.println(count);
     }
