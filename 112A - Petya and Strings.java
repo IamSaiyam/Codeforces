@@ -7,10 +7,11 @@ public class PetyaAndStrings {
         String s1 = sc.nextLine();
         String s2 = sc.nextLine();
 
+        //Converting both the strings to lowercase
         s1 = s1.toLowerCase();
         s2 = s2.toLowerCase();
 
-        int comp = s1.compareTo(s2);
+        int comp = s1.compareTo(s2); //Comparing both the strings Lexicographically and saving the result in comp
         if(comp > 0) System.out.println(1);
         else if(comp<0) System.out.println(-1);
         else System.out.println(0);
